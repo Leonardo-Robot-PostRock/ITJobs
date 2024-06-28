@@ -30,13 +30,11 @@ Pasos para levantar el frontend
     [nodemon](https://nodemon.io/)
     [node](https://nodejs.org/en)
 
-6. Correr aplicación. Ejecución de comandos:
+6. Correr aplicación. Ejecución de comandos posibles(Elegir uno):
 
     ```shell
         node app.js
     ```
-
-o
 
     ```shell
         nodemon app.js

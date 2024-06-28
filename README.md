@@ -36,7 +36,7 @@ Pasos para levantar el frontend
         node app.js
     ```
 
-### o
+o
 
     ```shell
         nodemon app.js

@@ -1,4 +1,4 @@
-#Development
+# Development
 > NOTA: El proyecto seguirá escalando. Esto puede afectar a la base de datos, frontend y backend.
 
 Pasos para levantar el frontend
@@ -35,7 +35,7 @@ Pasos para levantar el frontend
     ```shell
         node app.js
     ```
-    
+
 ### o
 
     ```shell

@@ -1,0 +1,22 @@
+{
+  "name": "itjobs",
+  "version": "1.0.0",
+  "description": "Applicación de búsqueda de trabajo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Leonardo-Robot-PostRock/ITJobs.git"
+  },
+  "keywords": [
+    "itjobs"
+  ],
+  "author": "Leonardo Gabriel Puebla",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/Leonardo-Robot-PostRock/ITJobs/issues"
+  },
+  "homepage": "https://github.com/Leonardo-Robot-PostRock/ITJobs#readme"
+}

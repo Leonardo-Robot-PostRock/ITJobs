@@ -32,5 +32,5 @@ Esta Licencia Educativa ("Licencia") es un acuerdo legal entre [Tu Nombre o el N
 8. General:
    Esta Licencia constituye el acuerdo completo entre las partes y reemplaza todos los acuerdos o representaciones previas, orales o escritas, sobre el tema de esta Licencia. Esta Licencia solo puede ser modificada por un documento escrito firmado por ambas partes.
 
-[Tu Nombre o el Nombre de Tu Compañía]
-[Tu Información de Contacto]
+[Leonardo Gabriel Puebla]
+[Linkedin](https://www.linkedin.com/in/leonardo-puebla-1a2b71229/)

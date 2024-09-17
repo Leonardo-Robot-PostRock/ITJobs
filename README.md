@@ -22,3 +22,15 @@ Pasos para levantar el frontend
     ```shell
         npm install
     ```
+
+5. Generar bundle de la aplicación
+
+    ```shell
+        npm run build
+    ```
+
+6. Correr la aplicación
+
+    ```shell
+        npm run start
+    ```

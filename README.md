@@ -3,8 +3,6 @@
 
 Pasos para levantar el frontend
 
-
-
 1. Clonar el backend
 
 ```
@@ -23,19 +21,4 @@ Pasos para levantar el frontend
 
     ```shell
         npm install
-    ```
-
-5. Instalar node y/o nodemon.
-
-    [nodemon](https://nodemon.io/)
-    [node](https://nodejs.org/en)
-
-6. Correr aplicación. Ejecución de comandos posibles(Elegir uno):
-
-    ```shell
-        node app.js
-    ```
-
-    ```shell
-        nodemon app.js
     ```

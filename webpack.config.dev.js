@@ -1,11 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 const DotEnv = require('dotenv-webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const styleLoader = require('style-loader');
+const cssLoader = require('css-loader');
 
 module.exports = {
     entry: './src/index.js',
@@ -14,6 +13,8 @@ module.exports = {
         filename: '[name].[contenthash].js',
         assetModuleFilename: 'assets/images/[hash][ext][query]'
     },
+    mode: 'development',
+    watch: true,
     resolve: {
         extensions: ['.js'],
         alias: {
@@ -41,48 +42,45 @@ module.exports = {
                 }
             },
             {
-                test: /\.css|.styl$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                test: /\.css$/i,
+                use: [styleLoader, cssLoader],
             },
             {
-                test: /\.png/,
+                test: /\.png$/,
                 type: 'asset/resource'
             },
             {
                 test: /\.(woff|woff2)$/i,
-                type: "asset/resource",
+                type: 'asset/resource',
                 generator: {
-                    filename: "assets/fonts/[hash][ext]"
+                    filename: 'assets/fonts/[hash][ext]'
                 }
             }
-
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             inject: true,
-            template: './src/templates/main.hbs',
-            filename: 'index.html'
-        }),
-        new MiniCssExtractPlugin({
-            filename: 'assets/[name].[contenthash].css'
+            template: './public/index.html',
+            filename: './index.html'
         }),
         new CopyPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, "src", "assets/images"),
-                    to: "assets/images"
+                    from: path.resolve(__dirname, 'src', 'assets/images'),
+                    to: 'assets/images'
                 }
             ]
         }),
         new DotEnv(),
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin()
     ],
-    optimization: {
-        minimize: true,
-        minimizer: [
-            new CssMinimizerPlugin(),
-            new TerserPlugin(),
-        ]
-    }
-}
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 3000,
+        hot: true,
+        open: true
+    },
+    devtool: 'source-map'
+};

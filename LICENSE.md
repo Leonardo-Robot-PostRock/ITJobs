@@ -1,6 +1,6 @@
 LICENCIA EDUCATIVA
 
-Esta Licencia Educativa ("Licencia") es un acuerdo legal entre [Tu Nombre o el Nombre de Tu Compañía] ("Licenciante") y el usuario final ("Licenciatario"). Al usar el software, el Licenciatario acepta los términos de esta Licencia.
+Esta Licencia Educativa ("Licencia") es un acuerdo legal entre Leonardo Gabriel Puebla ("Licenciante") y el usuario final ("Licenciatario"). Al usar el software, el Licenciatario acepta los términos de esta Licencia.
 
 1. Concesión de Licencia:
    El Licenciante concede al Licenciatario una licencia no exclusiva, no transferible y revocable para usar el software ("Software") únicamente con fines educativos y no comerciales.
